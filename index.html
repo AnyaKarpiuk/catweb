@@ -3,82 +3,98 @@
 
 <head>
   <meta charset="utf-8">
-  <title>❣ Alice Web</title>
+
+  <title>Alice Web ❣</title>
+
+  <!-- links to external files -->
+  <link rel="stylesheet" href="main.css">
+  <script src="menu.js"></script>
+  <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-  <table cellspacing='20'>
-    <tr>
-      <td><img src="main.jpg" alt="cat Alice"></td>
-      <td>
-        <h1>Alice</h1>
-        <p><i>Alice is a cat</i></p>
-        <p>Cats are very <em>weird</em> creatures. Do you want to know why? 🤷‍♀️
-          <a href="https://www.vox.com/2016/4/30/11532396/funny-cat-video-youtube-science">Press here</a>
-          <br>
-          Cats are common pets throughout the world,
-          and their worldwide population as of 2007 exceeded 500 million.
-        </p>
-        <p>Cats today retain many of the same instincts that allowed them to thrive
-          in the wild for millions of year.This explains some
-          of their seemingly strange behaviors: To them, our homes are their <b>jungles</b>.</p>
-      </td>
-    </tr>
-  </table>
 
-  <hr>
-  <h3>What does Alice like?</h3>
-  <h5>Here is the list: </h5>
-  <ul>
-    <li>Eating</li>
-    <li>Hunting</li>
-    <li>Sleeping</li>
-    <li>Exploring</li>
-    <li>Running</li>
-  </ul>
-  <hr>
+  <!-- main image -->
+  <img id="imgAlice" src="main.jpg" alt="cat Alice">
+
+  <!-- menu -->
+  <!-- open menu -->
+  <span id="openMenu" onclick="openMenu()">&#9776;</span>
+  <div id="menu" class="overlay">
+    <!-- close menu -->
+    <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeMenu()">&times;</a>
+    <!-- menu options -->
+    <div class="overlayMenu">
+      <a>Gallery</a>
+      <a>My friends</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 
 
-  </table>
-  <hr>
-  <h2>Alice's skills</h2>
-
-  <table>
-    <tr>
-      <td>Food eating</td>
-      <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Sleeping</td>
-      <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Destroying plants</td>
-      <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Running</td>
-      <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Socializing</td>
-      <td>⭐⭐⭐</td>
-    </tr>
-  </table>
 
 
-  <hr>
+  <div id="fronttext">
+    <h1 id="title">Alice</h1>
+    <p><i>Alice is a very energetic cat</i></p>
+    <p>Cats are very <em>weird</em> creatures. Do you want to know why? 🤷‍♀️
+      <a href="https://www.vox.com/2016/4/30/11532396/funny-cat-video-youtube-science">Press here</a>
+      <br>
+      Cats are common pets throughout the world,
+      and their worldwide population as of 2007 exceeded 500 million.
+    </p>
+    <p>Cats today retain many of the same instincts that allowed them to thrive
+      in the wild for millions of year.This explains some
+      of their seemingly strange behaviors: To them, our homes are their <b>jungles</b>.</p>
 
-  <!-- Contact form -->
-  <h2>Write something nice to Alice</h2>
-  <form class="" action="mailto:annakarpiuk19.1994@gmail.com" method="post" enctype="text/plain">
-    <label for="name">Name:</label>
-    <input type="text" name="name"> <br>
-    <label for="email">Email</label>
-    <input type="email" name="email" value=""> <br>
-    <label for="comment">Comment</label> <br>
-    <textarea name="comment" rows="8" cols="30"></textarea>
-  </form>
+
+
+
+
+    <div class="info">
+
+      <hr>
+      <h3>What does Alice like?</h3>
+      <h5>Here is the list: </h5>
+      <ul>
+        <li>Eating</li>
+        <li>Hunting</li>
+        <li>Sleeping</li>
+        <li>Exploring</li>
+        <li>Running</li>
+      </ul>
+      <hr>
+
+
+      </table>
+      <hr>
+      <h2>Alice's skills</h2>
+
+      <table>
+        <tr>
+          <td>Food eating</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Sleeping</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Destroying plants</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Running</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Socializing</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
 
 </body>
 

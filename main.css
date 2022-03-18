@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Unlock&display=swap');
+
+body {
+  background-color: #EAE7DC;
+  color: #8E8D8A;
+  font-family: 'Patrick Hand', cursive;
+  margin: 0;
+  font-size: 20px;
+}
+
+/* front page */
+#title {
+  font-size: 80px;
+  color: #E85A4F;
+  font-family: 'Unlock', cursive;
+  text-align: center;
+}
+
+#imgAlice {
+  width: 40%;
+  float: left;
+  position: fixed;
+}
+
+#fronttext {
+  padding: 20px;
+  margin: 10px;
+  height: 50%;
+  float: right;
+  width: 50%;
+}
+
+/* lines */
+hr {
+  border-style: none;
+  border-top: 10px dotted #E85A4F;
+  width: 10%;
+}
+
+/* menu */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  background-color: rgb(234, 231, 220, 0.9);
+  overflow-y: hidden;
+  transition: 0.9s;
+}
+
+.overlayMenu {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #636361;
+  display: block;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #E85A4F 50%);
+  background-size: 200% auto;
+  transition: background-position 0.3s cubic-bezier(0.3, -0.1, 1, 1);
+}
+
+.overlay a:hover {
+  color: #EAE7DC;
+  background-position: -99.99% 0;
+}
+
+#closebtn {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  font-size: 80px;
+  background-size: 0% auto;
+  color: #636361;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%);
+}
+
+#openMenu {
+  font-size: 40px;
+  cursor: pointer;
+  padding-left: 95%;
+  color: #636361;
+}
+
+/* @media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+} */
