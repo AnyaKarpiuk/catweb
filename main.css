@@ -7,6 +7,7 @@ body {
   font-family: 'Patrick Hand', cursive;
   margin: 0;
   font-size: 20px;
+
 }
 
 /* front page */
@@ -21,6 +22,7 @@ body {
   width: 40%;
   float: left;
   position: fixed;
+  opacity: 0.9;
 }
 
 #fronttext {
@@ -47,6 +49,7 @@ hr {
   background-color: rgb(234, 231, 220, 0.9);
   overflow-y: hidden;
   transition: 0.9s;
+  z-index: 1;
 }
 
 .overlayMenu {
@@ -89,6 +92,7 @@ hr {
   padding-left: 95%;
   color: #636361;
 }
+
 
 /* @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
