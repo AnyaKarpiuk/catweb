@@ -1,6 +1,6 @@
 
 .contactImg{
-  background-image: url("contactcats.jpg");
+  background-image: url("./pictures/contactcats.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;

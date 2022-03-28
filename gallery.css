@@ -1,0 +1,149 @@
+body {
+  counter-reset: count 0;
+}
+
+.name {
+  text-align: center;
+  font-size: 50px;
+  color: #E85A4F;
+  font-family: 'Unlock', cursive;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: #EAE7DC;
+}
+
+.img {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.5s ease-out;
+  filter: grayscale(100%);
+}
+
+.img:hover {
+  flex: 10;
+  color: #E85A4F;
+  background-color: #EAE7DC;
+  filter: grayscale(0%);
+}
+
+/* set a content of each image to a counter */
+.img::after {
+  counter-increment: count;
+  content: counter(count);
+  position: absolute;
+  font-size: 50px;
+  bottom: 0px;
+  left: 20px;
+  padding: 10px;
+}
+
+/* change text on each image on hover */
+.img:hover::after {
+  bottom: 50px;
+  transition: all 0.5s ease-out;
+  background-color: #EAE7DC;
+  bottom: 500px;
+  border-radius: 10px;
+}
+
+/* change a content of each image on hover to give a description */
+.one:hover::after {
+  content: "Bestie";
+}
+
+.two:hover::after {
+  content: "Working hard";
+}
+
+.three:hover::after {
+  content: "Cleaning time";
+}
+
+.four:hover::after {
+  content: "Exercising";
+}
+
+.five:hover::after {
+  content: "???";
+}
+
+.six:hover::after {
+  content: "Sleeping";
+}
+
+.seven:hover::after {
+  content: "Hiding";
+}
+
+.eight:hover::after {
+  content: "New Year";
+}
+
+.nine:hover::after {
+  content: "Birthday party";
+}
+
+/*  make the last image small on hover*/
+.one:hover~.nine, .two:hover~.nine, .three:hover~.nine, .four:hover~.nine, .five:hover~.nine,
+.six:hover~.nine, .seven:hover~.nine, .eight:hover~.nine {
+  flex: 1;
+}
+
+/* url for each image */
+.one {
+  flex: 1;
+  background-image: url("./pictures/window.jpg");
+}
+
+.two {
+  flex: 1;
+  background-image: url("./pictures/working.jpg");
+}
+
+.three {
+  flex: 1;
+  background-image: url("./pictures/cleaning.jpg");
+}
+
+.four {
+  flex: 1;
+  background-image: url("./pictures/exercise.jpg");
+}
+
+.five {
+  flex: 1;
+  background-image: url("./pictures/bath.jpg");
+}
+
+.six {
+  flex: 1;
+  background-image: url("./pictures/sleeping.jpg");
+}
+
+.seven {
+  flex: 1;
+  background-image: url("./pictures/hiding.jpg");
+}
+
+.eight {
+  flex: 1;
+  background-image: url("./pictures/newyear.jpg");
+}
+
+.nine {
+  flex: 10;
+  background-image: url("./pictures/birthday.jpg");
+}

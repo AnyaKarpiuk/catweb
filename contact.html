@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="contact.css">
   <script src="menu.js"></script>
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./pictures/favicon.ico">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
       <!-- menu options -->
       <div class="overlayMenu">
         <a href="index.html">Home</a>
-        <a>Gallery</a>
+        <a href="gallery.html">Gallery</a>
         <a>My friends</a>
         <a href="contact.html">Contact</a>
       </div>
@@ -37,11 +37,11 @@
   <!-- Contact form -->
   <form class="contactform" action="mailto:annakarpiuk19.1994@gmail.com" method="post" enctype="text/plain">
     <label for="name">Name</label> <br>
-    <input type="text" name="name"> <br>
+    <input type="text" name="name" required> <br>
     <label for="email">Email</label> <br>
-    <input type="email" name="email" value=""> <br>
+    <input type="email" name="email" value="" required> <br>
     <label for="comment">Comment</label> <br>
-    <textarea name="comment" rows="8" cols="30"></textarea> <br>
+    <textarea name="comment" rows="8" cols="30" required></textarea> <br>
     <button type="submit">Send</button>
   </form>
 
