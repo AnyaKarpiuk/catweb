@@ -27,7 +27,7 @@ body {
 
 #fronttext {
   padding: 20px;
-  margin: 10px;
+  margin: 5px;
   height: 50%;
   float: right;
   width: 50%;
@@ -36,8 +36,9 @@ body {
 /* lines */
 hr {
   border-style: none;
-  border-top: 10px dotted #E85A4F;
-  width: 10%;
+  border-top: 8px dotted #E85A4F;
+  width: 20%;
+  margin-top: 50px;
 }
 
 /* menu */
